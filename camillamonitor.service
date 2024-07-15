@@ -1,0 +1,15 @@
+[Unit]
+Description=CamillaDSP monitor to send tasmota plugs power on commands to maintain amplifiers up when the DSP is active (processing audio)
+Wants=camilladsp.service network-online.target
+After=network-online.target
+
+[Service]
+User=oubah
+ExecStart=~/bin/camilladsp.monitorstatus.py
+ExecStop=~/bin/camilladsp.shutdown.py
+Restart=on-failure
+RestartSec=30s
+
+[Install]
+WantedBy=default.target
+
