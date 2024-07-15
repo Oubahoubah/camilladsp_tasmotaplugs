@@ -1,5 +1,5 @@
-# camilladsp.monitor
-CamillaDSP.monitor probes CamillaDSP status through its websocket to switch on Tasmota plugs to turn on your amplifiers when "Running". It can be installed as a systemd service using very little resources in the background so not to compromise the audio playback quality.
+# camilladsp_tasmotaplugs
+camilladsp_tasmotaplugs probes CamillaDSP status through its websocket to switch on Tasmota plugs to turn on your amplifiers when "Running". It can be installed as a systemd service using very little resources in the background so not to compromise the audio playback quality.
 
 ## Dependencies
 Code has been kept as basic as possible:
