@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 from time import sleep
-from isthme_lib import tasmota_plug, camilladsp_api
+from cdspmon_lib import tasmota_plug, camilladsp_api
 
 short_sleep = 2
 long_sleep = 240
